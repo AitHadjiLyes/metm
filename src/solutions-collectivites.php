@@ -3,46 +3,7 @@ include 'includes/header.php';
 $pageTitle = "Solutions pour Collectivités - " . SITE_NAME;
 ?>
 
-<main class="solutions-page collectivites-solutions">
-    <style>
-        .collectivites-solutions .solutions-hero {
-            background: linear-gradient(145deg, #3b3f58, #6e7a99);
-            clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
-        }
-        .collectivites-solutions .solutions-intro {
-            background: #f8f9fa;
-        }
-        .collectivites-solutions .intro-card {
-            border-left: 6px solid #6e7a99;
-            text-align: left;
-        }
-        .collectivites-solutions .benefit-icon {
-            background: #eef1f7;
-            border-radius: 10px;
-            padding: 12px;
-        }
-        .collectivites-solutions .feature-card {
-            background: #ffffff;
-            border: 1px solid #e0e6ed;
-        }
-        .collectivites-solutions .feature-card h3 {
-            color: #3b3f58;
-        }
-        .collectivites-solutions .cta-buttons .btn-accent {
-            background-color: #3b3f58;
-            color: white;
-        }
-        .collectivites-solutions .cta-buttons .btn-secondary {
-            border: 1px solid #3b3f58;
-            color: #3b3f58;
-            background: transparent;
-        }
-        .collectivites-solutions .cta-buttons .btn-secondary:hover {
-            background: #3b3f58;
-            color: white;
-        }
-    </style>
-
+<main class="solutions-page">
     <!-- HERO SECTION -->
     <section class="solutions-hero">
         <div class="container">

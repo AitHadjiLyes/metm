@@ -1,0 +1,7 @@
+# .htaccess pour ne rien bloquer
+
+# Activer la réécriture d'URL (optionnel si tu l'utilises)
+RewriteEngine On
+
+# Ne pas bloquer les bots
+# (ne rien ajouter ici avec "RewriteCond %{HTTP_USER_AGENT}")
