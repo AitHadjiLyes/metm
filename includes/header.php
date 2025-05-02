@@ -119,9 +119,10 @@
                         <li><a href="/garantie-support.php" class="navbar-link block text-center py-3 hover:bg-primary-dark">Garantie et Support</a></li>
                     </ul>
                 </li>
-                <li><a href="/formulaire-pro.php" class="btn-accent px-5 py-2 rounded-full font-semibold">Demander un devis</a></li>
                 <li><a href="/about.php" class="navbar-link">À propos</a></li>
                 <li><a href="/contact.php" class="navbar-link">Contact</a></li>
+                <li><a href="/formulaire-pro.php" class="btn-accent px-5 py-2 rounded-full font-semibold">Demander un devis</a></li>
+
             </ul>
         </nav>
         <!-- Bouton du menu hamburger pour mobile -->
@@ -137,11 +138,41 @@
 <nav id="mobile-menu" class="fixed top-0 left-0 w-64 h-full bg-custom-primary text-white transform -translate-x-full transition-transform duration-300 ease-in-out z-50">
     <ul class="p-6 space-y-4">
         <li><a href="/index.php" class="block text-lg font-medium hover:text-accent">Accueil</a></li>
-        <li><a href="/solutions-pme.php" class="block text-lg font-medium hover:text-accent">Solutions PME</a></li>
-        <li><a href="/solutions-education.php" class="block text-lg font-medium hover:text-accent">Écoles et Universités</a></li>
-        <li><a href="/solutions-collectivites.php" class="block text-lg font-medium hover:text-accent">Collectivités</a></li>
-        <li><a href="/blanchiment-donnees.php" class="block text-lg font-medium hover:text-accent">Blanchiment de Données</a></li>
-        <li><a href="/pack-startup.php" class="block text-lg font-medium hover:text-accent">Pack Start-up</a></li>
+        <li>
+            <button class="mobile-submenu-toggle w-full text-left text-lg font-medium hover:text-accent flex items-center justify-between">
+                <span>Solutions Entreprises</span>
+                <i class="fas fa-chevron-down text-sm transition-transform duration-300"></i>
+            </button>
+            <ul class="mobile-submenu hidden pl-4 mt-2 space-y-2">
+                <li><a href="/solutions-pme.php" class="block text-base font-medium hover:text-accent">Solutions PME</a></li>
+                <li><a href="/solutions-education.php" class="block text-base font-medium hover:text-accent">Écoles et Universités</a></li>
+                <li><a href="/solutions-collectivites.php" class="block text-base font-medium hover:text-accent">Collectivités</a></li>
+                <li><a href="/blanchiment-donnees.php" class="block text-base font-medium hover:text-accent">Blanchiment de Données</a></li>
+            </ul>
+        </li>
+        <li>
+            <button class="mobile-submenu-toggle w-full text-left text-lg font-medium hover:text-accent flex items-center justify-between">
+                <span>Nos Offres Packagées</span>
+                <i class="fas fa-chevron-down text-sm transition-transform duration-300"></i>
+            </button>
+            <ul class="mobile-submenu hidden pl-4 mt-2 space-y-2">
+                <li><a href="/pack-startup.php" class="block text-base font-medium hover:text-accent">Pack Start-up</a></li>
+                <li><a href="/pack-education.php" class="block text-base font-medium hover:text-accent">Pack Éducation</a></li>
+                <li><a href="/pack-entreprise.php" class="block text-base font-medium hover:text-accent">Pack Entreprise</a></li>
+                <li><a href="/pack-sur-mesure.php" class="block text-base font-medium hover:text-accent">Pack Sur-mesure</a></li>
+            </ul>
+        </li>
+        <li>
+            <button class="mobile-submenu-toggle w-full text-left text-lg font-medium hover:text-accent flex items-center justify-between">
+                <span>Processus d'Achat</span>
+                <i class="fas fa-chevron-down text-sm transition-transform duration-300"></i>
+            </button>
+            <ul class="mobile-submenu hidden pl-4 mt-2 space-y-2">
+                <li><a href="/comment-commander.php" class="block text-base font-medium hover:text-accent">Comment commander ?</a></li>
+                <li><a href="/livraison-deploiement.php" class="block text-base font-medium hover:text-accent">Livraison et Déploiement</a></li>
+                <li><a href="/garantie-support.php" class="block text-base font-medium hover:text-accent">Garantie et Support</a></li>
+            </ul>
+        </li>
         <li><a href="/contact.php" class="block text-lg font-medium hover:text-accent">Contact</a></li>
     </ul>
 </nav>
