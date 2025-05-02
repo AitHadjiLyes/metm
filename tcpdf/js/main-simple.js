@@ -277,15 +277,3 @@ document.addEventListener("DOMContentLoaded", () => {
     })
   }
 })
-
-
-document.addEventListener("DOMContentLoaded", () => {
-  const menuButtons = document.querySelectorAll(".navbar-link + button");
-  menuButtons.forEach((button) => {
-      button.addEventListener("click", (e) => {
-          e.preventDefault();
-          const submenu = button.nextElementSibling;
-          submenu.classList.toggle("hidden");
-      });
-  });
-});

@@ -10,15 +10,6 @@ import ImageHandler from "./image-handler.js"
 document.addEventListener("DOMContentLoaded", () => {
   console.log("DOM chargé, initialisation des composants...")
 
-  const menuButtons = document.querySelectorAll(".navbar-link + button");
-  menuButtons.forEach((button) => {
-      button.addEventListener("click", (e) => {
-          e.preventDefault();
-          const submenu = button.nextElementSibling;
-          submenu.classList.toggle("hidden");
-      });
-  });
-  console.log("Menu toggle script ajouté.");
   // Initialiser les animations au défilement
   ScrollAnimations.init()
   console.log("Animations initialisées")
