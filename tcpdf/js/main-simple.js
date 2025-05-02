@@ -2,43 +2,37 @@ document.addEventListener("DOMContentLoaded", () => {
   // Mobile menu functionality
   const menuToggle = document.getElementById("menu-toggle")
   const mobileMenu = document.getElementById("mobile-menu")
-  const menuOverlay = document.getElementById("menu-overlay")
-  const menuClose = document.getElementById("menu-close")
   const body = document.body
 
-  if (menuToggle && mobileMenu && menuOverlay && menuClose) {
+  if (menuToggle && mobileMenu) {
     console.log("Menu mobile détecté")
-
-    // Create spans for hamburger icon if they don't exist
-    if (menuToggle.children.length === 0) {
-      for (let i = 0; i < 3; i++) {
-        const span = document.createElement("span")
-        menuToggle.appendChild(span)
-      }
-    }
 
     menuToggle.addEventListener("click", () => {
       console.log("Clic sur le menu hamburger")
       mobileMenu.classList.toggle("-translate-x-full")
-      menuOverlay.classList.toggle("hidden")
-      body.classList.toggle("menu-open") // Prevent scrolling when menu is open
+      body.classList.toggle("menu-open")
     })
 
-    // Close menu when clicking the close button
-    menuClose.addEventListener("click", () => {
-      mobileMenu.classList.add("-translate-x-full")
-      menuOverlay.classList.add("hidden")
-      body.classList.remove("menu-open")
-    })
+    // Handle submenu toggles
+    const submenuToggles = mobileMenu.querySelectorAll('.mobile-submenu-toggle');
+    submenuToggles.forEach(toggle => {
+      toggle.addEventListener('click', (e) => {
+        const submenu = toggle.nextElementSibling;
+        const chevron = toggle.querySelector('i');
+        submenu.classList.toggle('hidden');
+        chevron.style.transform = submenu.classList.contains('hidden') ? 'rotate(0deg)' : 'rotate(180deg)';
+      });
+    });
 
-    // Close menu when clicking outside
-    menuOverlay.addEventListener("click", () => {
-      mobileMenu.classList.add("-translate-x-full")
-      menuOverlay.classList.add("hidden")
-      body.classList.remove("menu-open")
+    // Close menu when clicking a link
+    mobileMenu.addEventListener("click", (e) => {
+      if (e.target.tagName === 'A') {
+        mobileMenu.classList.add("-translate-x-full")
+        body.classList.remove("menu-open")
+      }
     })
   } else {
-    console.log("menu-toggle, mobile-menu, menu-overlay ou menu-close manquant")
+    console.log("menu-toggle ou mobile-menu manquant")
   }
 
   // Services dropdown functionality - Desktop
@@ -118,12 +112,8 @@ document.addEventListener("DOMContentLoaded", () => {
           // Expand or collapse answer
           if (faqItem.classList.contains("active")) {
             answer.style.maxHeight = answer.scrollHeight + "px"
-            question.setAttribute("aria-expanded", "true")
-            answer.setAttribute("aria-hidden", "false")
           } else {
             answer.style.maxHeight = null
-            question.setAttribute("aria-expanded", "false")
-            answer.setAttribute("aria-hidden", "true")
           }
         })
       })
@@ -277,3 +267,14 @@ document.addEventListener("DOMContentLoaded", () => {
     })
   }
 })
+
+document.addEventListener("DOMContentLoaded", () => {
+  const menuButtons = document.querySelectorAll(".navbar-link + button");
+  menuButtons.forEach((button) => {
+      button.addEventListener("click", (e) => {
+          e.preventDefault();
+          const submenu = button.nextElementSibling;
+          submenu.classList.toggle("hidden");
+      });
+  });
+});

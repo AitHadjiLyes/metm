@@ -14,7 +14,7 @@ define('BASE_PATH', getBasePath());
 
 // Informations du site
 
-define('SITE_NAME', 'MISS & MISTER - PC Reconditionnés');
+define('SITE_NAME', 'M&M - PC Reconditionnés');
 define('SITE_TAGLINE', 'PC Portables et Smartphones Reconditionnés à Prix Réduits');
 define('SITE_DESCRIPTION', 'Découvrez nos PC portables reconditionnés, smartphones et composants informatiques de qualité à prix mini. Livraison rapide, garantie incluse.');
 define('SITE_KEYWORDS', 'PC reconditionné, ordinateur portable, smartphone reconditionné, composants informatiques, MISS & MISTER, tech durable, informatique écologique');
