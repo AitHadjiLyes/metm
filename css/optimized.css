@@ -1,30 +1,30 @@
 /* Base */
 :root {
   /* Couleurs principales (bleu uniquement) */
-  --color-primary: #0a2a66;             /* Bleu foncé sérieux */
-  --color-primary-dark: #061c3f;        /* Très foncé, pour header ou footer */
-  --color-primary-light: #174ea6;       /* Bleu moyen élégant */
-  --color-secondary: #1d4ed8;           /* Bleu vif, pour CTA */
-  --color-accent: #3b82f6;              /* Bleu clair pour hover/élément visible */
+  --color-primary: #0a2a66; /* Bleu foncé sérieux */
+  --color-primary-dark: #061c3f; /* Très foncé, pour header ou footer */
+  --color-primary-light: #174ea6; /* Bleu moyen élégant */
+  --color-secondary: #1d4ed8; /* Bleu vif, pour CTA */
+  --color-accent: #3b82f6; /* Bleu clair pour hover/élément visible */
 
   /* États personnalisés bleus (remplacent les verts/rouges classiques) */
-  --color-success: #2563eb;             /* Succès = bleu moyen saturé */
-  --color-error: #1e40af;               /* Bleu sombre pour avertissement */
-  --color-warning: #3b5998;             /* Bleu modéré pour attention */
+  --color-success: #2563eb; /* Succès = bleu moyen saturé */
+  --color-error: #1e40af; /* Bleu sombre pour avertissement */
+  --color-warning: #3b5998; /* Bleu modéré pour attention */
 
   /* Couleurs de texte */
-  --color-text: #0f172a;                /* Texte principal */
-  --color-text-muted: #334155;          /* Texte secondaire */
-  --color-subtle-text: #64748b;         /* Texte discret */
-  --color-subtle-text-light: #94a3b8;   /* Texte très discret */
+  --color-text: #0f172a; /* Texte principal */
+  --color-text-muted: #334155; /* Texte secondaire */
+  --color-subtle-text: #64748b; /* Texte discret */
+  --color-subtle-text-light: #94a3b8; /* Texte très discret */
 
   /* Fonds */
-  --color-bg: #f8fafc;                  /* Fond blanc bleuté */
-  --color-bg-light: #e2e8f0;            /* Fond très clair bleu-gris */
-  --color-bg-hover: #cbd5e1;            /* Fond hover */
-  --color-bg-dark: #0f172a;             /* Fond très foncé */
-  --color-bg-footer: #1e293b;           /* Footer sombre */
-  --color-footer-text: #cbd5e1;         /* Texte clair sur fond sombre */
+  --color-bg: #f8fafc; /* Fond blanc bleuté */
+  --color-bg-light: #e2e8f0; /* Fond très clair bleu-gris */
+  --color-bg-hover: #cbd5e1; /* Fond hover */
+  --color-bg-dark: #0f172a; /* Fond très foncé */
+  --color-bg-footer: #1e293b; /* Footer sombre */
+  --color-footer-text: #cbd5e1; /* Texte clair sur fond sombre */
 
   /* Ombres / overlay */
   --color-shadow: rgba(30, 64, 175, 0.08);
@@ -33,20 +33,20 @@
   --color-overlay: rgba(10, 42, 102, 0.4);
 
   /* Spacing (marges / paddings standardisées) */
-  --spacing-xs: 0.25rem;     /* 4px */
-  --spacing-sm: 0.5rem;      /* 8px */
-  --spacing-md: 1rem;        /* 16px */
-  --spacing-lg: 2rem;        /* 32px */
-  --spacing-xl: 4rem;        /* 64px */
+  --spacing-xs: 0.25rem; /* 4px */
+  --spacing-sm: 0.5rem; /* 8px */
+  --spacing-md: 1rem; /* 16px */
+  --spacing-lg: 2rem; /* 32px */
+  --spacing-xl: 4rem; /* 64px */
 
   /* Tailles de police */
-  --font-size-xs: 0.75rem;    /* 12px */
-  --font-size-sm: 0.875rem;   /* 14px */
-  --font-size-md: 1rem;       /* 16px */
-  --font-size-lg: 1.25rem;    /* 20px */
-  --font-size-xl: 1.5rem;     /* 24px */
-  --font-size-2xl: 2rem;      /* 32px */
-  --font-size-3xl: 2.5rem;    /* 40px */
+  --font-size-xs: 0.75rem; /* 12px */
+  --font-size-sm: 0.875rem; /* 14px */
+  --font-size-md: 1rem; /* 16px */
+  --font-size-lg: 1.25rem; /* 20px */
+  --font-size-xl: 1.5rem; /* 24px */
+  --font-size-2xl: 2rem; /* 32px */
+  --font-size-3xl: 2.5rem; /* 40px */
 
   /* Bordures arrondies */
   --border-radius-sm: 4px;
@@ -63,7 +63,6 @@
   --vh: 1vh;
   --real-vh: 1vh;
 }
-
 
 /* Reset */
 * {
@@ -171,9 +170,6 @@ button {
     transform: translateY(0);
   }
 }
-
-
-
 
 /* Assurez-vous que l'état initial est toujours maintenu quand non visible */
 .scroll-reveal:not(.visible) {
@@ -299,7 +295,6 @@ header {
   z-index: 1000;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
-
 
 .bg-custom-primary {
   background-color: var(--color-primary);
@@ -1707,8 +1702,6 @@ footer {
   }
 }
 
-
-
 .bg-custom-primary {
   background-color: var(--color-primary);
 }
@@ -1729,229 +1722,228 @@ footer {
    SOLUTIONS PAGE — MODERN LOOK
    =============================== */
 
-   .solutions-page {
-    padding-top: 100px;
-    background: var(--color-bg);
-  }
-  
-  /* HERO + WAVE */
-  .solutions-hero {
-    background: linear-gradient(145deg, var(--color-primary-dark), var(--color-primary));
-    color: white;
-    padding: 120px 20px 100px;
-    text-align: center;
-    position: relative;
-    overflow: hidden;
-    clip-path: ellipse(140% 100% at 50% 0%);
-  }
-  
-  .solutions-hero::after {
-    content: "";
-    position: absolute;
-    bottom: -1px;
-    left: 0;
-    right: 0;
-    height: 140px;
-    background: url('data:image/svg+xml;base64,PHN2ZyBmaWxsPSJ3aGl0ZSIgdmlld0JveD0iMCAwIDExMjAgMjAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9IkAgMEg2MDBDMTA2MCAxNTAgODAwIDIwMCA0MDAgMTgwIDAgMTYwIDAgODAgMCA2MEgwIi8+PC9zdmc+') no-repeat center;
-    background-size: cover;
-    z-index: 1;
-    opacity: 0.3;
-  }
-  
-  .solutions-title {
-    font-size: 3.2rem;
-    font-weight: 800;
-    margin-bottom: 1rem;
-    position: relative;
-    z-index: 2;
-  }
-  
-  .solutions-subtitle {
-    font-size: 1.3rem;
-    max-width: 700px;
-    margin: 0 auto;
-    opacity: 0.9;
-    z-index: 2;
-    position: relative;
-  }
-  
-  /* INTRO CARD - Glassmorphism */
-  .solutions-intro {
-    background: rgba(255, 255, 255, 0.25);
-    backdrop-filter: blur(10px);
-    padding: 100px 20px;
-  }
-  
-  .intro-card {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 50px 40px;
-    border-radius: 20px;
-    background: rgba(255, 255, 255, 0.85);
-    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.1);
-    text-align: center;
-  }
-  
-  .intro-card h2 {
-    font-size: 2.2rem;
-    color: var(--color-primary);
-    margin-bottom: 1.5rem;
-  }
-  
-  .intro-card p {
-    font-size: 1.1rem;
-    color: var(--color-text-muted);
-    line-height: 1.8;
-  }
-  
-  /* BENEFIT CARDS */
-  .benefits-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 40px;
-    padding: 60px 0;
-  }
-  
-  .benefit-card {
-    background: white;
-    padding: 40px 30px;
-    border-radius: 20px;
-    box-shadow: 0 8px 24px var(--color-shadow);
-    transition: all 0.4s ease;
-    text-align: center;
-    position: relative;
-  }
-  
-  .benefit-card:hover {
-    transform: translateY(-8px) scale(1.02);
-    box-shadow: 0 12px 30px var(--color-shadow-strong);
-  }
-  
-  .benefit-icon {
-    font-size: 2.5rem;
-    color: var(--color-primary);
-    margin-bottom: 20px;
-  }
-  
-  .benefit-card h3 {
-    font-size: 1.3rem;
-    font-weight: 700;
-    color: var(--color-primary-dark);
-    margin-bottom: 15px;
-  }
-  
-  .benefit-card p {
-    font-size: 1rem;
-    color: var(--color-text);
-    line-height: 1.6;
-  }
-  
-  /* FEATURES */
-  .features-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px;
-    padding: 60px 0;
-  }
-  
-  .feature-card {
-    background: white;
-    padding: 40px 30px;
-    border-radius: 16px;
-    box-shadow: 0 6px 18px var(--color-shadow);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .feature-card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 10px 24px var(--color-shadow-strong);
-  }
-  
-  .feature-card h3 {
-    font-size: 1.4rem;
-    margin-bottom: 20px;
-    color: var(--color-primary);
-    text-align: center;
-  }
-  
-  .feature-list {
-    padding-left: 0;
-    list-style: none;
-  }
-  
-  .feature-list li {
-    display: flex;
-    align-items: center;
-    margin-bottom: 15px;
-    color: var(--color-text-muted);
-    font-size: 1rem;
-  }
-  
-  .feature-list i {
-    margin-right: 12px;
-    color: var(--color-primary);
-  }
-  
-  /* CTA */
-  .solutions-cta {
-    background: radial-gradient(ellipse at center, var(--color-primary) 0%, var(--color-primary-dark) 100%);
-    color: white;
-    padding: 100px 20px;
-    text-align: center;
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .solutions-cta h2 {
-    font-size: 2.2rem;
-    margin-bottom: 1rem;
-    font-weight: 700;
-  }
-  
-  .solutions-cta p {
-    font-size: 1.1rem;
-    max-width: 700px;
-    margin: 0 auto 2rem;
-    opacity: 0.9;
-  }
-  
-  .cta-buttons {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  
-  .cta-buttons .btn {
-    font-size: 1rem;
-    padding: 14px 28px;
-    border-radius: var(--border-radius-full);
-    transition: all 0.3s ease;
-  }
-  
-  .cta-buttons .btn-accent {
-    background-color: var(--color-accent);
-    color: white;
-    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
-  }
-  
-  .cta-buttons .btn-accent:hover {
-    background-color: #1d4ed8;
-    box-shadow: 0 6px 18px rgba(59, 130, 246, 0.4);
-  }
-  
-  .cta-buttons .btn-secondary {
-    background-color: transparent;
-    border: 1px solid white;
-    color: white;
-  }
-  
-  .cta-buttons .btn-secondary:hover {
-    background-color: white;
-    color: var(--color-primary);
-  }
-  
+.solutions-page {
+  padding-top: 100px;
+  background: var(--color-bg);
+}
 
+/* HERO + WAVE */
+.solutions-hero {
+  background: linear-gradient(145deg, var(--color-primary-dark), var(--color-primary));
+  color: white;
+  padding: 120px 20px 100px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  clip-path: ellipse(140% 100% at 50% 0%);
+}
+
+.solutions-hero::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  height: 140px;
+  background: url("data:image/svg+xml;base64,PHN2ZyBmaWxsPSJ3aGl0ZSIgdmlld0JveD0iMCAwIDExMjAgMjAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9IkAgMEg2MDBDMTA2MCAxNTAgODAwIDIwMCA0MDAgMTgwIDAgMTYwIDAgODAgMCA2MEgwIi8+PC9zdmc+")
+    no-repeat center;
+  background-size: cover;
+  z-index: 1;
+  opacity: 0.3;
+}
+
+.solutions-title {
+  font-size: 3.2rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  position: relative;
+  z-index: 2;
+}
+
+.solutions-subtitle {
+  font-size: 1.3rem;
+  max-width: 700px;
+  margin: 0 auto;
+  opacity: 0.9;
+  z-index: 2;
+  position: relative;
+}
+
+/* INTRO CARD - Glassmorphism */
+.solutions-intro {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(10px);
+  padding: 100px 20px;
+}
+
+.intro-card {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 50px 40px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.85);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.intro-card h2 {
+  font-size: 2.2rem;
+  color: var(--color-primary);
+  margin-bottom: 1.5rem;
+}
+
+.intro-card p {
+  font-size: 1.1rem;
+  color: var(--color-text-muted);
+  line-height: 1.8;
+}
+
+/* BENEFIT CARDS */
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 40px;
+  padding: 60px 0;
+}
+
+.benefit-card {
+  background: white;
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px var(--color-shadow);
+  transition: all 0.4s ease;
+  text-align: center;
+  position: relative;
+}
+
+.benefit-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 12px 30px var(--color-shadow-strong);
+}
+
+.benefit-icon {
+  font-size: 2.5rem;
+  color: var(--color-primary);
+  margin-bottom: 20px;
+}
+
+.benefit-card h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--color-primary-dark);
+  margin-bottom: 15px;
+}
+
+.benefit-card p {
+  font-size: 1rem;
+  color: var(--color-text);
+  line-height: 1.6;
+}
+
+/* FEATURES */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  padding: 60px 0;
+}
+
+.feature-card {
+  background: white;
+  padding: 40px 30px;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px var(--color-shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 24px var(--color-shadow-strong);
+}
+
+.feature-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+  color: var(--color-primary);
+  text-align: center;
+}
+
+.feature-list {
+  padding-left: 0;
+  list-style: none;
+}
+
+.feature-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  color: var(--color-text-muted);
+  font-size: 1rem;
+}
+
+.feature-list i {
+  margin-right: 12px;
+  color: var(--color-primary);
+}
+
+/* CTA */
+.solutions-cta {
+  background: radial-gradient(ellipse at center, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+  color: white;
+  padding: 100px 20px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.solutions-cta h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.solutions-cta p {
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  opacity: 0.9;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.cta-buttons .btn {
+  font-size: 1rem;
+  padding: 14px 28px;
+  border-radius: var(--border-radius-full);
+  transition: all 0.3s ease;
+}
+
+.cta-buttons .btn-accent {
+  background-color: var(--color-accent);
+  color: white;
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+}
+
+.cta-buttons .btn-accent:hover {
+  background-color: #1d4ed8;
+  box-shadow: 0 6px 18px rgba(59, 130, 246, 0.4);
+}
+
+.cta-buttons .btn-secondary {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+}
+
+.cta-buttons .btn-secondary:hover {
+  background-color: white;
+  color: var(--color-primary);
+}
 
 .navbar-link {
   color: white;
@@ -1983,16 +1975,6 @@ footer {
   visibility: visible;
 }
 
-
-
-
-
-
-
-
-
-
-
 /* ===============================
    END OF SOLUTIONS PAGE
    =============================== */
@@ -2005,7 +1987,7 @@ footer {
 
 body {
   background-color: #f1f5f9;
-  font-family: 'Segoe UI', 'Inter', sans-serif;
+  font-family: "Segoe UI", "Inter", sans-serif;
   margin: 0;
   padding: 0;
   color: #0f172a;
@@ -2024,6 +2006,8 @@ body {
   padding: 140px 20px 100px;
   text-align: center;
   clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
+  padding-top: 100px;
+  padding-bottom: 80px;
 }
 
 .hero-title {
@@ -2080,7 +2064,7 @@ body {
 }
 
 .section-title::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 60px;
   height: 4px;
@@ -2207,7 +2191,8 @@ body {
 }
 
 /* CTA */
-.mid-cta, .final-cta {
+.mid-cta,
+.final-cta {
   text-align: center;
   padding: 80px 20px;
   background: linear-gradient(to right, #0a2a66, #1e3a8a);
@@ -2242,20 +2227,14 @@ body {
   }
 }
 
-
-
-
-
-
 /* ===============================
    END OF How to Order Page
    =============================== */
 
-
-   /* =======================
+/* =======================
    Delivery Page - Modern Look
-   ======================= */ 
-   /* DELIVERY & DEPLOYMENT PAGE - DISTINCT YET COHERENT STYLING */
+   ======================= */
+/* DELIVERY & DEPLOYMENT PAGE - DISTINCT YET COHERENT STYLING */
 /* DELIVERY & DEPLOYMENT PAGE - DISTINCT YET COHERENT STYLING */
 /* DELIVERY & DEPLOYMENT PAGE - REVAMPED STYLING */
 /* DELIVERY & DEPLOYMENT PAGE - REVAMPED STYLING */
@@ -2273,7 +2252,7 @@ body {
 }
 
 body {
-  font-family: 'Segoe UI', sans-serif;
+  font-family: "Segoe UI", sans-serif;
   background: #f9fafb;
   margin: 0;
   color: #1e293b;
@@ -2415,7 +2394,7 @@ body {
 }
 
 .timeline-item::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 20px;
   left: 30px;
@@ -2500,7 +2479,7 @@ body {
 }
 
 .section-title::after {
-  content: '';
+  content: "";
   display: block;
   width: 60px;
   height: 3px;
@@ -2534,3 +2513,7 @@ body {
     text-align: center;
   }
 }
+
+/* ===============================
+   END OF DELIVERY & DEPLOYMENT PAGE
+   =============================== */

@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Comment commander - M&M Solutions Pro</title>
-  <link rel="stylesheet" href="/css/how-to-order.css">
+  <link rel="stylesheet" href="/css/optimized.css">
   <link rel="stylesheet" href="/fontawesome/css/all.min.css">
 </head>
 <body>
@@ -41,7 +41,7 @@
           <p class="step-desc">Recevez une proposition détaillée incluant les spécifications du matériel, les tarifs et les délais de livraison.</p>
           <ul class="step-list">
             <li><i class="fas fa-check"></i> Devis complet</li>
-            <li><i class="fas fa-check"></i> Options d’équipement</li>
+            <li><i class="fas fa-check"></i> Options d'équipement</li>
             <li><i class="fas fa-check"></i> Formules de services</li>
           </ul>
         </div>

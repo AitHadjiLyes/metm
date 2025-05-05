@@ -42,6 +42,30 @@ $pageTitle = "Blanchiment de Données - " . SITE_NAME;
         .data-wipe-page .btn-primary:hover {
             background-color: #0066cc;
         }
+        .data-wipe-page .process-step {
+  position: relative;
+  padding-top: 60px;
+}
+
+.data-wipe-page .step-number {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 48px;
+  height: 48px;
+  background-color: var(--color-primary, #0a2a66);
+  color: white;
+  font-size: 1.25rem;
+  font-weight: bold;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  z-index: 2;
+}
+
     </style>
 
     <section class="solutions-hero py-24">
@@ -70,23 +94,23 @@ $pageTitle = "Blanchiment de Données - " . SITE_NAME;
             <h2 class="text-3xl font-bold mb-12 text-center">Notre Processus Certifié</h2>
             <div class="grid md:grid-cols-4 gap-10">
                 <div class="process-step text-center">
-                    <div class="step-number bg-custom-primary text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">1</div>
-                    <h3 class="text-xl font-semibold mb-3">Diagnostic</h3>
+                <div class="step-number">1</div>
+                <h3 class="text-xl font-semibold mb-3">Diagnostic</h3>
                     <p>Audit complet du parc à traiter, type de support, volume de données, sensibilité des fichiers</p>
                 </div>
                 <div class="process-step text-center">
-                    <div class="step-number bg-custom-primary text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">2</div>
-                    <h3 class="text-xl font-semibold mb-3">Effacement</h3>
+                <div class="step-number">1</div>
+                <h3 class="text-xl font-semibold mb-3">Effacement</h3>
                     <p>Utilisation de logiciels certifiés (DoD 5220.22-M, NIST, Gutmann...) garantissant l’irréversibilité</p>
                 </div>
                 <div class="process-step text-center">
-                    <div class="step-number bg-custom-primary text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">3</div>
-                    <h3 class="text-xl font-semibold mb-3">Vérification</h3>
+                <div class="step-number">1</div>
+                <h3 class="text-xl font-semibold mb-3">Vérification</h3>
                     <p>Contrôle par checksum, relecture des secteurs, double validation automatisée</p>
                 </div>
                 <div class="process-step text-center">
-                    <div class="step-number bg-custom-primary text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">4</div>
-                    <h3 class="text-xl font-semibold mb-3">Certification</h3>
+                <div class="step-number">1</div>
+                <h3 class="text-xl font-semibold mb-3">Certification</h3>
                     <p>Remise d'un certificat PDF signé, daté, listant chaque support effacé avec ses numéros de série</p>
                 </div>
             </div>

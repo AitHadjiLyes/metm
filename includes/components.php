@@ -96,16 +96,15 @@ function renderTestimonial($content, $author, $avatarUrl = '', $position = '') {
  * @param string $title Titre de l'événement
  * @param string $description Description de l'événement
  */
-function renderTimelineItem($year, $title, $description) {
-    ?>
+function renderTimelineItem($step, $title, $description) {
+    echo '
     <div class="timeline-item">
         <div class="timeline-content">
-            <div class="timeline-year"><?php echo $year; ?></div>
-            <h3 class="timeline-title"><?php echo $title; ?></h3>
-            <p class="timeline-text"><?php echo $description; ?></p>
+            <div class="timeline-year">' . $step . '</div>
+            <h3 class="timeline-title">' . $title . '</h3>
+            <p class="timeline-text">' . $description . '</p>
         </div>
-    </div>
-    <?php
+    </div>';
 }
 
 /**

@@ -332,7 +332,117 @@ $blogArticles = [
         'date' => '18 juillet 2023',
         'category' => 'Sécurité',
         'tags' => ['Cybersécurité', 'Protection des données', 'RGPD']
-    ]
+    ],
+    [
+        'id' => 6,
+        'title' => 'Les critères essentiels pour choisir un ordinateur reconditionné',
+        'slug' => 'criteres-choix-ordinateur-reconditionne',
+        'excerpt' => 'Découvrez les éléments clés à considérer pour sélectionner un ordinateur reconditionné adapté à vos besoins professionnels.',
+        'content' => '<p>Choisir un ordinateur reconditionné nécessite une évaluation minutieuse de plusieurs critères pour garantir performance et fiabilité. Voici les principaux éléments à considérer :</p>
+    
+    <h2>1. Définir vos besoins</h2>
+    <p>Identifiez les tâches que vous souhaitez accomplir avec l\'ordinateur : bureautique, graphisme, développement, etc. Cela déterminera les spécifications nécessaires.</p>
+    
+    <h2>2. Vérifier les composants</h2>
+    <p>Assurez-vous que le processeur, la mémoire RAM et le disque dur répondent à vos exigences. Privilégiez les SSD pour une meilleure réactivité.</p>
+    
+    <h2>3. Examiner l\'état général</h2>
+    <p>Consultez le grade attribué à l\'appareil (A, B ou C) pour connaître son état esthétique et fonctionnel.</p>
+    
+    <h2>4. Garanties et support</h2>
+    <p>Optez pour des vendeurs offrant une garantie d\'au moins 12 mois et un support technique réactif.</p>
+    
+    <h2>Conclusion</h2>
+    <p>En prenant en compte ces critères, vous pourrez choisir un ordinateur reconditionné qui allie performance, fiabilité et économie.</p>',
+        'image' => '/assets/images/choix-ordinateur.jpg',
+        'author' => 'Équipe M&M',
+        'date' => '5 mai 2025',
+        'category' => 'Conseils',
+        'tags' => ['Guide d\'achat', 'Matériel reconditionné', 'Entreprise']
+    ],
+    [
+        'id' => 7,
+        'title' => 'Pourquoi opter pour le matériel reconditionné en entreprise',
+        'slug' => 'pourquoi-materiel-reconditionne-entreprise',
+        'excerpt' => 'Le matériel reconditionné offre de nombreux avantages pour les entreprises, tant sur le plan économique qu\'écologique.',
+        'content' => '<p>Adopter du matériel reconditionné en entreprise présente plusieurs bénéfices :</p>
+    
+    <h2>1. Réduction des coûts</h2>
+    <p>Les équipements reconditionnés sont généralement 30 à 70% moins chers que les neufs, permettant des économies substantielles.</p>
+    
+    <h2>2. Engagement écologique</h2>
+    <p>Le reconditionnement prolonge la durée de vie des appareils et réduit les déchets électroniques, contribuant à une démarche RSE.</p>
+    
+    <h2>3. Fiabilité et performance</h2>
+    <p>Les produits reconditionnés sont testés et remis à neuf, garantissant des performances comparables au matériel neuf.</p>
+    
+    <h2>4. Flexibilité</h2>
+    <p>Il est souvent possible de personnaliser les configurations selon les besoins spécifiques de l\'entreprise.</p>
+    
+    <h2>Conclusion</h2>
+    <p>Le matériel reconditionné est une alternative viable pour les entreprises souhaitant allier performance, économie et responsabilité environnementale.</p>',
+        'image' => '/assets/images/avantages-reconditionne.jpg',
+        'author' => 'Équipe M&M',
+        'date' => '5 mai 2025',
+        'category' => 'Business',
+        'tags' => ['Économie', 'RSE', 'Matériel reconditionné']
+    ],
+    [
+        'id' => 8,
+        'title' => 'Comment entretenir votre matériel informatique reconditionné',
+        'slug' => 'entretien-materiel-informatique-reconditionne',
+        'excerpt' => 'Un bon entretien prolonge la durée de vie de votre matériel reconditionné. Voici nos conseils pratiques.',
+        'content' => '<p>Pour assurer la longévité de votre matériel reconditionné, suivez ces recommandations :</p>
+    
+    <h2>1. Nettoyage régulier</h2>
+    <p>Éliminez la poussière des composants internes et externes pour éviter la surchauffe.</p>
+    
+    <h2>2. Mises à jour logicielles</h2>
+    <p>Maintenez le système d\'exploitation et les logiciels à jour pour garantir la sécurité et la performance.</p>
+    
+    <h2>3. Utilisation adéquate</h2>
+    <p>Évitez les chocs physiques et les environnements humides ou poussiéreux.</p>
+    
+    <h2>4. Sauvegardes régulières</h2>
+    <p>Effectuez des sauvegardes fréquentes pour prévenir la perte de données en cas de défaillance.</p>
+    
+    <h2>Conclusion</h2>
+    <p>Un entretien régulier et approprié de votre matériel reconditionné garantit sa performance et prolonge sa durée de vie.</p>',
+        'image' => '/assets/images/entretien-materiel.jpg',
+        'author' => 'Équipe M&M',
+        'date' => '5 mai 2025',
+        'category' => 'Maintenance',
+        'tags' => ['Maintenance', 'Conseils', 'Matériel reconditionné']
+    ],
+    [
+        'id' => 9,
+        'title' => 'Les idées reçues sur le matériel reconditionné',
+        'slug' => 'idees-recues-materiel-reconditionne',
+        'excerpt' => 'Démystifions les idées reçues courantes sur le matériel informatique reconditionné.',
+        'content' => '<p>Le matériel reconditionné souffre de plusieurs idées reçues. Clarifions les plus courantes :</p>
+    
+    <h2>1. Moins performant que le neuf</h2>
+    <p>Faux. Les équipements reconditionnés sont testés et remis à niveau pour offrir des performances comparables au neuf.</p>
+    
+    <h2>2. Durée de vie limitée</h2>
+    <p>Faux. Avec un bon entretien, le matériel reconditionné peut durer aussi longtemps que du matériel neuf.</p>
+    
+    <h2>3. Risques de sécurité accrus</h2>
+    <p>Faux. Les données précédentes sont effacées selon des protocoles stricts, garantissant la sécurité des nouveaux utilisateurs.</p>
+    
+    <h2>4. Absence de garantie</h2>
+    <p>Faux. La plupart des vendeurs offrent des garanties similaires à celles du matériel neuf.</p>
+    
+    <h2>Conclusion</h2>
+    <p>Le matériel reconditionné est une option fiable et économique, à condition de l\'acheter auprès de fournisseurs certifiés.</p>',
+        'image' => '/assets/images/idees-recues.jpg',
+        'author' => 'Équipe M&M',
+        'date' => '5 mai 2025',
+        'category' => 'Information',
+        'tags' => ['Mythes', 'Matériel reconditionné', 'Fiabilité']
+    ],
+    
+    
 ];
 
 /**
@@ -363,14 +473,7 @@ function getArticleBySlug($slug) {
     return null;
 }
 
-/**
- * Fonction pour récupérer les  {
-            return $article;
-        }
-    }
-    
-    return null;
-}
+
 
 /**
  * Fonction pour récupérer les articles par catégorie

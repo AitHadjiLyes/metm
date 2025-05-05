@@ -73,7 +73,7 @@ renderResponsiveBackgroundImage('.hero-image', $heroBgDesktop, $heroBgMobile, $h
             renderServiceCard(
                 '/assets/images/01.png',
                 'Logistique et déploiement maîtrisés',
-                'Livraison coordonnée, installation sur site et mise en service par nos techniciens. Notre système de suivi en temps réel vous garantit une visibilité complète et une tranquillité d\'esprit jusqu\'à la mise en production.'
+                'Livraison coordonnée, installation sur site et mise en service par nos techniciens. Notre système de suivi en temps réel vous garantit une visibilité complète et une tranquillité d\'esprit jusqu la mise en production.'
             );
 
             renderServiceCard(
@@ -201,7 +201,7 @@ renderResponsiveBackgroundImage('.hero-image', $heroBgDesktop, $heroBgMobile, $h
 <section class="partners scroll-reveal">
     <div class="container">
         <h2 class="section-title">Un processus d'acquisition simplifié pour les professionnels</h2>
-        <div class="timeline">
+        <div class="timeline-vertical">
             <?php
             renderTimelineItem('Étape 1', 'Audit et conseil personnalisé', 'Nos experts analysent vos besoins spécifiques et vous recommandent les solutions les plus adaptées à votre environnement et budget.');
             renderTimelineItem('Étape 2', 'Proposition sur mesure', 'Vous recevez un devis détaillé incluant matériel, services associés et planning de déploiement, avec plusieurs options possibles.');

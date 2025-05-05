@@ -1,0 +1,145 @@
+/* Utilitaires et animations */
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.8s ease forwards;
+}
+
+.delay-1 {
+  animation-delay: 0.3s;
+  transition-delay: 0.1s;
+}
+
+.delay-2 {
+  animation-delay: 0.6s;
+  transition-delay: 0.2s;
+}
+
+.delay-3 {
+  animation-delay: 0.9s;
+  transition-delay: 0.3s;
+}
+
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.scroll-reveal.visible {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Assurez-vous que l'état initial est toujours maintenu quand non visible */
+.scroll-reveal:not(.visible) {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+/* Images */
+.img-cover {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.img-contain {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+
+.img-responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Aspect ratio containers */
+.aspect-ratio-container {
+  position: relative;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+}
+
+.aspect-ratio-16-9 {
+  padding-top: 56.25%;
+}
+
+.aspect-ratio-4-3 {
+  padding-top: 75%;
+}
+
+.aspect-ratio-1-1 {
+  padding-top: 100%;
+}
+
+.aspect-ratio-container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Lazy loading */
+.lazy-image {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.lazy-image.loaded {
+  opacity: 1;
+}
+
+/* Utilitaires */
+.bg-custom-primary {
+  background-color: var(--color-primary);
+}
+
+.text-accent {
+  color: var(--color-accent);
+}
+
+.bg-secondary {
+  background-color: var(--color-secondary);
+}
+
+.hover\:bg-primary-dark:hover {
+  background-color: var(--color-primary-dark);
+}
+
+.group:hover .group-hover\:opacity-100 {
+  opacity: 1;
+}
+
+.group:hover .group-hover\:visible {
+  visibility: visible;
+}
+
+.touch-active {
+  opacity: 0.7;
+  transform: scale(0.98);
+}
