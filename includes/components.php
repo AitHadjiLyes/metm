@@ -1,6 +1,6 @@
 <?php
 /**
- * Composants réutilisables
+ * Composants réutilisables pour l'interface
  */
 
 /**
@@ -89,23 +89,6 @@ function renderTestimonial($content, $author, $avatarUrl = '', $position = '') {
     <?php
 }
 
-/**
- * Affiche un élément de la timeline
- * 
- * @param string $year Année ou étape
- * @param string $title Titre de l'événement
- * @param string $description Description de l'événement
- */
-function renderTimelineItem($step, $title, $description) {
-    echo '
-    <div class="timeline-item">
-        <div class="timeline-content">
-            <div class="timeline-year">' . $step . '</div>
-            <h3 class="timeline-title">' . $title . '</h3>
-            <p class="timeline-text">' . $description . '</p>
-        </div>
-    </div>';
-}
 
 /**
  * Affiche un élément de FAQ
@@ -280,4 +263,88 @@ function renderResponsiveBackgroundImage($selector, $src, $srcMobile = '', $srcT
     echo '</script>';
 }
 
+/**
+ * Renders a timeline
+ * @param array $items Array of timeline items, each with 'date', 'title', and 'text' keys.
+ */
+function renderTimelineStart() {
+    echo '<div class="timeline-container relative">';
+}
+
+function renderTimelineItem($etape, $titre, $description, $icon = 'fa-circle', $color = 'bg-blue-500') {
+    static $index = 0;
+    $side = $index % 2 === 0 ? 'left' : 'right';
+    echo '
+    <div class="timeline-step ' . $side . '">
+        <div class="step-content bg-white shadow-md rounded-md p-6">
+            <div class="flex items-center mb-3">
+                <div class="w-12 h-12 rounded-full ' . $color . ' flex items-center justify-center text-white text-xl mr-4">
+                    <i class="fas ' . $icon . '"></i>
+                </div>
+                <h3 class="text-xl font-semibold text-gray-800">' . htmlspecialchars($etape) . ' – ' . htmlspecialchars($titre) . '</h3>
+            </div>
+            <p class="text-gray-600">' . htmlspecialchars($description) . '</p>
+        </div>
+    </div>';
+    $index++;
+}
+
+function renderTimelineEnd() {
+    echo '</div>';
+}
+
+
+function renderHorizontalTimeline($steps) {
+    echo '<div class="relative max-w-7xl mx-auto px-4 py-10">';
+    echo '<div class="absolute top-12 left-16 right-16 h-1 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 rounded-full z-0"></div>';
+    echo '<div class="flex justify-between relative z-10">';
+
+    foreach ($steps as $index => $step) {
+        $status = $step['status'] ?? '';
+        $icon = $step['icon'] ?? 'fa-circle';
+        $title = htmlspecialchars($step['title']);
+        $text = htmlspecialchars($step['text']);
+        $color = $step['color'] ?? 'bg-blue-500';
+
+        $circleStyle = match ($status) {
+            'completed' => 'bg-green-500 border-green-500',
+            'active' => $color . ' border-white',
+            default => 'bg-white border-gray-300',
+        };
+
+        echo '<div class="w-1/5 text-center relative px-2 box-border">';
+        echo '<div class="mx-auto w-6 h-6 rounded-full border-4 ' . $circleStyle . '"></div>';
+        echo '<div class="mt-8 bg-white rounded-md shadow-md p-4 text-sm">';
+        echo '<div class="flex flex-col items-center mb-2">
+                <div class="w-10 h-10 rounded-full ' . $color . ' flex items-center justify-center text-white text-lg mb-2">
+                    <i class="fas ' . $icon . '"></i>
+                </div>
+                <h3 class="font-semibold text-gray-800">' . $title . '</h3>
+              </div>';
+        echo '<p class="text-gray-500">' . $text . '</p>';
+        echo '</div></div>';
+    }
+
+    echo '</div></div>';
+}
+
+
+ 
+
+// Ajoutez le JavaScript d'animation
+echo '<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("active");
+            }
+        });
+    }, { threshold: 0.5 });
+
+    document.querySelectorAll(".timeline-item").forEach(item => {
+        observer.observe(item);
+    });
+});
+</script>';
 ?>

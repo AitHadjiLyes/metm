@@ -1,5 +1,7 @@
 <?php
 include 'includes/header.php';
+require_once 'includes/components.php';
+
 $pageTitle = "Delivery & Deployment - " . SITE_NAME;
 ?>
 
@@ -63,38 +65,17 @@ $pageTitle = "Delivery & Deployment - " . SITE_NAME;
         </div>
     </section>
 
-    <!-- Process Timeline -->
-    <section class="deployment-timeline">
-        <div class="container">
-            <h2 class="section-title">Deployment Process</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <h3>Planning</h3>
-                        <p>Detailed deployment strategy and schedule creation</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <h3>Preparation</h3>
-                        <p>Site assessment and infrastructure readiness check</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <h3>Execution</h3>
-                        <p>Professional installation and configuration</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <h3>Testing</h3>
-                        <p>Comprehensive system testing and verification</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <?php
+    $steps = [
+    ['title' => 'Panier', 'text' => 'Ajoutez vos produits au panier', 'icon' => 'fa-shopping-cart', 'status' => 'completed', 'color' => 'bg-blue-500'],
+    ['title' => 'Identification', 'text' => 'Connectez-vous ou continuez en invité', 'icon' => 'fa-user', 'status' => 'completed', 'color' => 'bg-purple-500'],
+    ['title' => 'Livraison', 'text' => 'Choisissez votre méthode de livraison', 'icon' => 'fa-truck', 'status' => 'active', 'color' => 'bg-pink-500'],
+    ['title' => 'Paiement', 'text' => 'Entrez vos informations de paiement', 'icon' => 'fa-credit-card', 'status' => '', 'color' => 'bg-gray-300'],
+    ['title' => 'Confirmation', 'text' => 'Recevez votre confirmation de commande', 'icon' => 'fa-check-circle', 'status' => '', 'color' => 'bg-gray-300'],
+];
+
+renderHorizontalTimeline($steps);
+    ?>
 
     <!-- Mid-page CTA -->
     <section class="mid-page-cta">

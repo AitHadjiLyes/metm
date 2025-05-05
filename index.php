@@ -203,10 +203,44 @@ renderResponsiveBackgroundImage('.hero-image', $heroBgDesktop, $heroBgMobile, $h
         <h2 class="section-title">Un processus d'acquisition simplifié pour les professionnels</h2>
         <div class="timeline-vertical">
             <?php
-            renderTimelineItem('Étape 1', 'Audit et conseil personnalisé', 'Nos experts analysent vos besoins spécifiques et vous recommandent les solutions les plus adaptées à votre environnement et budget.');
-            renderTimelineItem('Étape 2', 'Proposition sur mesure', 'Vous recevez un devis détaillé incluant matériel, services associés et planning de déploiement, avec plusieurs options possibles.');
-            renderTimelineItem('Étape 3', 'Préparation technique avancée', 'Chaque équipement est testé, configuré selon vos spécifications et préparé pour une intégration immédiate dans votre infrastructure.');
-            renderTimelineItem('Étape 4', 'Déploiement coordonné et suivi', 'Livraison programmée, installation sur site si nécessaire, et accompagnement post-déploiement avec support technique dédié.');
+         renderTimelineStart();
+
+         renderTimelineItem(
+             'Étape 1',
+             'Audit et conseil personnalisé',
+             'Nos experts analysent vos besoins spécifiques et vous recommandent les solutions les plus adaptées à votre environnement et budget.',
+             'fa-magnifying-glass-chart',
+             'bg-blue-500'
+         );
+         
+         renderTimelineItem(
+             'Étape 2',
+             'Proposition sur mesure',
+             'Vous recevez un devis détaillé incluant matériel, services associés et planning de déploiement, avec plusieurs options possibles.',
+             'fa-file-invoice',
+             'bg-purple-500'
+         );
+         
+         renderTimelineItem(
+             'Étape 3',
+             'Préparation technique avancée',
+             'Chaque équipement est testé, configuré selon vos spécifications et préparé pour une intégration immédiate dans votre infrastructure.',
+             'fa-cogs',
+             'bg-pink-500'
+         );
+         
+         renderTimelineItem(
+             'Étape 4',
+             'Déploiement coordonné et suivi',
+             'Livraison programmée, installation sur site si nécessaire, et accompagnement post-déploiement avec support technique dédié.',
+             'fa-truck-fast',
+             'bg-green-500'
+         );
+         
+         renderTimelineEnd();
+         
+            
+            
             ?>
         </div>
         <div class="cta-center" style="text-align: center; margin-top: 30px;">
@@ -214,6 +248,8 @@ renderResponsiveBackgroundImage('.hero-image', $heroBgDesktop, $heroBgMobile, $h
         </div>
     </div>
 </section>
+
+
 
 <!-- Section Partenaires - Crédibilité -->
 <section class="partners scroll-reveal">
