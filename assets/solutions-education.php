@@ -13,7 +13,6 @@ $pageTitle = "Solutions Éducation - " . SITE_NAME;
             background: linear-gradient(120deg, #f0f8ff, #ffffff);
         }
         .education-solutions .benefit-icon {
-            background: #e6f0ff;
             border-radius: 50%;
             padding: 16px;
         }

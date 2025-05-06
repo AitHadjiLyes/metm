@@ -1,22 +1,15 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Comment commander - M&M Solutions Pro</title>
-  <link rel="stylesheet" href="/css/how-to-order.css">
-  <link rel="stylesheet" href="/fontawesome/css/all.min.css">
-</head>
-<body>
-<?php include 'includes/header.php'; ?>
+<?php
+include 'includes/header.php';
+$pageTitle = "Blanchiment de Données - " . SITE_NAME;
+?>
 <main class="how-to-order page-content">
   <section class="process-hero">
     <div class="container">
       <h1 class="hero-title">Comment commander</h1>
       <p class="hero-subtitle">Un processus d'achat simple, transparent et professionnel pour vos besoins en équipements informatiques</p>
       <div class="hero-cta">
-        <a href="/contact.php" class="btn btn-primary">Demander un devis</a>
-        <a href="/telecharger-plaquette.php" class="btn btn-secondary">Télécharger notre catalogue</a>
+        <a href="/contact.php" class="btn-accent">Demander un devis</a>
+        <a href="/telecharger-plaquette.php" class="btn-secondary">Télécharger notre catalogue</a>
       </div>
     </div>
   </section>
@@ -41,7 +34,7 @@
           <p class="step-desc">Recevez une proposition détaillée incluant les spécifications du matériel, les tarifs et les délais de livraison.</p>
           <ul class="step-list">
             <li><i class="fas fa-check"></i> Devis complet</li>
-            <li><i class="fas fa-check"></i> Options d’équipement</li>
+            <li><i class="fas fa-check"></i> Options d'équipement</li>
             <li><i class="fas fa-check"></i> Formules de services</li>
           </ul>
         </div>
@@ -63,7 +56,7 @@
     <div class="container">
       <h2>Prêt à démarrer ?</h2>
       <p>Notre équipe vous accompagne à chaque étape du processus.</p>
-      <a href="/contact.php" class="btn btn-primary">Parler à un expert</a>
+      <a href="/contact.php" class="btn-accent">Parler à un expert</a>
     </div>
   </section>
 
@@ -105,17 +98,98 @@
     </div>
   </section>
 
-  <section class="final-cta">
-    <div class="container">
-      <h2>Commencez votre commande dès aujourd'hui</h2>
-      <p>Transformez votre infrastructure IT grâce à notre matériel reconditionné professionnel.</p>
-      <div class="cta-buttons">
-        <a href="/contact.php" class="btn btn-primary">Démarrer maintenant</a>
-        <a href="/telecharger-plaquette.php" class="btn btn-secondary">Télécharger la brochure</a>
-      </div>
-    </div>
-  </section>
+  <section class="solutions-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Équipez votre établissement</h2>
+                <p>Découvrez nos solutions sur mesure pour l'éducation</p>
+                <div class="cta-buttons">
+                    <a href="/contact.php" class="btn btn-primary">Demander un devis</a>
+                    <a href="/telecharger-plaquette.php" class="btn btn-secondary">Documentation détaillée</a>
+                </div>
+            </div>
+        </div>
+    </section>
 </main>
 <?php include 'includes/footer.php'; ?>
 </body>
+<style>
+/* Styles spécifiques à la page Comment Commander */
+.process-hero {
+  background: linear-gradient(135deg, var(--color-primary-dark), var(--color-primary));
+  color: white;
+  padding: 140px 20px 100px;
+  text-align: center;
+  clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
+  padding-top: 100px;
+  padding-bottom: 80px;
+}
+
+.hero-title {
+  font-size: 3.2rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  margin-bottom: 2rem;
+}
+
+.hero-cta a {
+  display: inline-block;
+  margin: 0 10px;
+  padding: 14px 28px;
+  border-radius: 9999px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-accent {
+  background-color: var(--color-accent);
+  color: white;
+  box-shadow: 0 4px 12px var(--color-shadow);
+}
+
+.btn-accent:hover {
+  background-color: var(--color-primary-dark);
+  box-shadow: 0 6px 18px var(--color-shadow-strong);
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  border: 2px solid white;
+  color: white;
+  background: transparent;
+}
+
+.btn-secondary:hover {
+  background-color: white;
+  color: var(--color-primary);
+  transform: translateY(-2px);
+}
+
+.mid-cta, .final-cta {
+  background: linear-gradient(to right, var(--color-primary-dark), var(--color-primary));
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.info-icon {
+  font-size: 2rem;
+  color: var(--color-primary);
+  margin-bottom: 15px;
+}
+
+.step-number {
+  background-color: var(--color-primary);
+}
+
+.step-list i {
+  color: var(--color-primary);
+}
+</style>
 </html>

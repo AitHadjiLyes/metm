@@ -24,119 +24,93 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
-    <!-- Script RGPD -->
-    <script>
-    function setCookie(name, value, days) {
-        const d = new Date();
-        d.setTime(d.getTime() + (days*24*60*60*1000));
-        document.cookie = name + "=" + value + ";expires=" + d.toUTCString() + ";path=/";
-    }
+    <!-- RGPD : TarteAuCitron -->
+    <script type="text/javascript">
+        tarteaucitronForceLanguage = "fr";
+        tarteaucitronInit({
+            "privacyUrl": "/politique-cookies.php",
+            "hashtag": "#tarteaucitron",
+            "highPrivacy": true,
+            "handleBrowserDNTRequest": false,
+            "removeCredit": true,
+            "moreInfoLink": true,
+            "orientation": "bottom",
+            "showIcon": true,
+            "iconPosition": "BottomRight",
+            "cookieslist": true,
+            "mandatory": true,
+            "acceptAllCta": true,
+            "denyAllCta": true
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/tarteaucitronjs@1.12.1/tarteaucitron.min.js"></script>
 
-    function getCookie(name) {
-        const cookies = document.cookie.split(';');
-        for (let c of cookies) {
-            c = c.trim();
-            if (c.indexOf(name + "=") === 0) return c.substring(name.length + 1);
-        }
-        return null;
-    }
-
-    function acceptCookies() {
-        setCookie('cookieConsent', 'accepted', 365);
-        document.getElementById('cookie-banner').style.display = 'none';
-        loadGA4();
-    }
-
-    function refuseCookies() {
-        setCookie('cookieConsent', 'refused', 365);
-        document.getElementById('cookie-banner').style.display = 'none';
-    }
-
-    function loadGA4() {
-        const script1 = document.createElement('script');
-        script1.async = true;
-        script1.src = "https://www.googletagmanager.com/gtag/js?id=G-1QMZ1YLRH8";
-        document.head.appendChild(script1);
-
-        const script2 = document.createElement('script');
-        script2.innerHTML = `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-1QMZ1YLRH8');
-        `;
-        document.head.appendChild(script2);
-    }
-
-    window.addEventListener("DOMContentLoaded", () => {
-        const consent = getCookie('cookieConsent');
-        if (consent === 'accepted') {
-            loadGA4();
-            const banner = document.getElementById('cookie-banner');
-            if (banner) banner.style.display = 'none';
-        } else if (consent === 'refused') {
-            const banner = document.getElementById('cookie-banner');
-            if (banner) banner.style.display = 'none';
-        }
-    });
+    <!-- Google Analytics via TarteAuCitron -->
+    <script type="text/javascript">
+        tarteaucitron.services.googleanalytics = {
+            "key": "googleanalytics",
+            "type": "analytic",
+            "name": "Google Analytics",
+            "needConsent": true,
+            "cookies": ['_ga', '_gat', '_gid'],
+            "js": function () {
+                (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+                ga('create', 'G-1QMZ1YLRH8', 'auto');
+                ga('send', 'pageview');
+            }
+        };
     </script>
 
-    <!-- Style de la bannière RGPD -->
+    <!-- Styles critiques pour le header -->
     <style>
-    #cookie-banner {
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background: #1e40af;
-        color: white;
-        padding: 1rem;
-        z-index: 9999;
+    header {
+        height: auto;
+        padding: 0.5rem 0;
+    }
+    .logo-img {
+        max-height: 60px;
+        width: auto;
+    }
+    #menu-toggle {
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
         justify-content: space-between;
-        align-items: center;
-        font-family: 'Inter', sans-serif;
-    }
-    #cookie-banner p {
-        margin: 0;
-        flex: 1;
-        font-size: 0.95rem;
-    }
-    #cookie-banner button {
-        margin-left: 0.5rem;
-        padding: 0.5rem 1rem;
+        width: 30px;
+        height: 21px;
+        background: transparent;
         border: none;
-        font-weight: bold;
         cursor: pointer;
-        border-radius: 4px;
+        padding: 0;
+        z-index: 10;
     }
-    #cookie-banner .accept-btn {
-        background-color: #facc15;
-        color: #1e1e1e;
+    #menu-toggle span {
+        display: block;
+        width: 100%;
+        height: 3px;
+        background-color: white;
+        border-radius: 3px;
+        transition: all 0.3s ease;
     }
-    #cookie-banner .refuse-btn {
-        background-color: #374151;
+    .navbar-link {
         color: white;
+        font-weight: 500;
+    }
+    .navbar-link:hover {
+        color: var(--color-accent, #f59e0b);
+    }
+    #mobile-menu {
+        z-index: 1000;
+        box-shadow: 0 0 15px rgba(0,0,0,0.2);
     }
     </style>
 </head>
 
 <body>
-
-<!-- Bannière RGPD -->
-<div id="cookie-banner">
-    <p>Nous utilisons des cookies pour améliorer votre expérience. <a href="/politique-cookies.php" style="text-decoration: underline; color: #facc15;">En savoir plus</a>.</p>
-    <div>
-        <button class="accept-btn" onclick="acceptCookies()">Accepter</button>
-        <button class="refuse-btn" onclick="refuseCookies()">Refuser</button>
-    </div>
-</div>
-
-<!-- Header principal -->
 <header class="bg-custom-primary text-white fixed top-0 left-0 w-full z-50 shadow-md">
     <div class="container mx-auto px-4 py-2 flex justify-between items-center">
-
         <!-- Logo -->
         <div class="flex items-center">
             <a href="/index.php" class="hover:text-accent transition">
@@ -185,8 +159,38 @@
                 <span class="block w-6 h-0.5 bg-white"></span>
             </button>
         </div>
+
+        <nav id="mobile-menu" class="fixed top-0 left-0 w-64 h-full bg-custom-primary text-white transform -translate-x-full transition-transform duration-300 ease-in-out z-50">
+            <ul class="p-6 space-y-4">
+                <li><a href="/index.php" class="block text-lg font-medium hover:text-accent">Accueil</a></li>
+                <li>
+                    <button class="mobile-submenu-toggle w-full text-left text-lg font-medium hover:text-accent flex items-center justify-between">
+                        <span>Solutions Entreprises</span>
+                        <i class="fas fa-chevron-down text-sm transition-transform duration-300"></i>
+                    </button>
+                    <ul class="mobile-submenu hidden pl-4 mt-2 space-y-2">
+                        <li><a href="/solutions-pme.php" class="block text-base font-medium hover:text-accent">Solutions PME</a></li>
+                        <li><a href="/solutions-education.php" class="block text-base font-medium hover:text-accent">Écoles et Universités</a></li>
+                        <li><a href="/solutions-collectivites.php" class="block text-base font-medium hover:text-accent">Collectivités</a></li>
+                        <li><a href="/blanchiment-donnees.php" class="block text-base font-medium hover:text-accent">Blanchiment de Données</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <button class="mobile-submenu-toggle w-full text-left text-lg font-medium hover:text-accent flex items-center justify-between">
+                        <span>Processus d'Achat</span>
+                        <i class="fas fa-chevron-down text-sm transition-transform duration-300"></i>
+                    </button>
+                    <ul class="mobile-submenu hidden pl-4 mt-2 space-y-2">
+                        <li><a href="/comment-commander.php" class="block text-base font-medium hover:text-accent">Comment commander ?</a></li>
+                        <li><a href="/livraison-deploiement.php" class="block text-base font-medium hover:text-accent">Livraison et Déploiement</a></li>
+                        <li><a href="/garantie-support.php" class="block text-base font-medium hover:text-accent">Garantie et Support</a></li>
+                    </ul>
+                </li>
+                <li><a href="/contact.php" class="block text-lg font-medium hover:text-accent">Contact</a></li>
+            </ul>
+        </nav>
     </div>
 </header>
 
-<!-- Compense le header fixe -->
+<!-- Ajout d'un espace pour compenser le header fixe -->
 <div style="height: 70px;"></div>

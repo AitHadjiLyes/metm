@@ -1,0 +1,65 @@
+/* Variables et configuration de base */
+:root {
+  /* Couleurs principales */
+  --color-primary: #0a2a66; /* Bleu foncé sérieux */
+  --color-primary-dark: #061c3f; /* Très foncé, pour header ou footer */
+  --color-primary-light: #174ea6; /* Bleu moyen élégant */
+  --color-secondary: #1d4ed8; /* Bleu vif, pour CTA */
+  --color-accent: #3b82f6; /* Bleu clair pour hover/élément visible */
+
+  /* États personnalisés bleus */
+  --color-success: #2563eb; /* Succès = bleu moyen saturé */
+  --color-error: #1e40af; /* Bleu sombre pour avertissement */
+  --color-warning: #3b5998; /* Bleu modéré pour attention */
+
+  /* Couleurs de texte */
+  --color-text: #0f172a; /* Texte principal */
+  --color-text-muted: #334155; /* Texte secondaire */
+  --color-subtle-text: #64748b; /* Texte discret */
+  --color-subtle-text-light: #94a3b8; /* Texte très discret */
+
+  /* Fonds */
+  --color-bg: #f8fafc; /* Fond blanc bleuté */
+  --color-bg-light: #e2e8f0; /* Fond très clair bleu-gris */
+  --color-bg-hover: #cbd5e1; /* Fond hover */
+  --color-bg-dark: #0f172a; /* Fond très foncé */
+  --color-bg-footer: #1e293b; /* Footer sombre */
+  --color-footer-text: #cbd5e1; /* Texte clair sur fond sombre */
+
+  /* Ombres / overlay */
+  --color-shadow: rgba(30, 64, 175, 0.08);
+  --color-shadow-light: rgba(30, 64, 175, 0.04);
+  --color-shadow-strong: rgba(30, 64, 175, 0.15);
+  --color-overlay: rgba(10, 42, 102, 0.4);
+
+  /* Spacing (marges / paddings standardisées) */
+  --spacing-xs: 0.25rem; /* 4px */
+  --spacing-sm: 0.5rem; /* 8px */
+  --spacing-md: 1rem; /* 16px */
+  --spacing-lg: 2rem; /* 32px */
+  --spacing-xl: 4rem; /* 64px */
+
+  /* Tailles de police */
+  --font-size-xs: 0.75rem; /* 12px */
+  --font-size-sm: 0.875rem; /* 14px */
+  --font-size-md: 1rem; /* 16px */
+  --font-size-lg: 1.25rem; /* 20px */
+  --font-size-xl: 1.5rem; /* 24px */
+  --font-size-2xl: 2rem; /* 32px */
+  --font-size-3xl: 2.5rem; /* 40px */
+
+  /* Bordures arrondies */
+  --border-radius-sm: 4px;
+  --border-radius-md: 8px;
+  --border-radius-lg: 12px;
+  --border-radius-full: 9999px;
+
+  /* Transitions */
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s ease;
+  --transition-slow: 0.5s ease;
+
+  /* Variables pour compatibilité mobile */
+  --vh: 1vh;
+  --real-vh: 1vh;
+}

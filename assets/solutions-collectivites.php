@@ -17,7 +17,6 @@ $pageTitle = "Solutions pour Collectivités - " . SITE_NAME;
             text-align: left;
         }
         .collectivites-solutions .benefit-icon {
-            background: #eef1f7;
             border-radius: 10px;
             padding: 12px;
         }
@@ -29,18 +28,21 @@ $pageTitle = "Solutions pour Collectivités - " . SITE_NAME;
             color: #3b3f58;
         }
         .collectivites-solutions .cta-buttons .btn-accent {
-            background-color: #3b3f58;
+            background-color: #007BFF;
             color: white;
         }
         .collectivites-solutions .cta-buttons .btn-secondary {
-            border: 1px solid #3b3f58;
-            color: #3b3f58;
+            border: 1px solid #007BFF;
+            color: #007BFF;
             background: transparent;
         }
         .collectivites-solutions .cta-buttons .btn-secondary:hover {
-            background: #3b3f58;
+            background: #007BFF;
             color: white;
         }
+
+
+    
     </style>
 
     <!-- HERO SECTION -->
@@ -125,11 +127,11 @@ $pageTitle = "Solutions pour Collectivités - " . SITE_NAME;
     <section class="solutions-cta">
         <div class="container">
             <div class="cta-content">
-                <h2>Prêt à équiper votre collectivité ?</h2>
-                <p>Contactez-nous pour une étude personnalisée de vos besoins</p>
+                <h2>Équipez votre établissement</h2>
+                <p>Découvrez nos solutions sur mesure pour l'éducation</p>
                 <div class="cta-buttons">
-                    <a href="/contact.php" class="btn btn-accent">Nous contacter</a>
-                    <a href="/telecharger-plaquette.php" class="btn btn-secondary">Documentation</a>
+                    <a href="/contact.php" class="btn btn-primary">Demander un devis</a>
+                    <a href="/telecharger-plaquette.php" class="btn btn-secondary">Documentation détaillée</a>
                 </div>
             </div>
         </div>

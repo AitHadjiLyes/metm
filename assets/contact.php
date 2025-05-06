@@ -17,60 +17,7 @@ include 'includes/header.php';
         </div>
 
         <div class="contact-card">
-            <div class="contact-info">
-                <h3>Informations de contact</h3>
-                
-                <div class="contact-item">
-                    <div class="contact-icon">
-                        <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
-                    </div>
-                    <div class="contact-details">
-                        <h4>Adresse</h4>
-                        <p><?php echo CONTACT_ADDRESS; ?></p>
-                    </div>
-                </div>
-                
-                <div class="contact-item">
-                    <div class="contact-icon">
-                        <i class="fas fa-phone-alt" aria-hidden="true"></i>
-                    </div>
-                    <div class="contact-details">
-                        <h4>Téléphone</h4>
-                        <p><?php echo CONTACT_PHONE; ?></p>
-                        <p><?php echo CONTACT_HOURS; ?></p>
-                    </div>
-                </div>
-                
-                <div class="contact-item">
-                    <div class="contact-icon">
-                        <i class="fas fa-envelope" aria-hidden="true"></i>
-                    </div>
-                    <div class="contact-details">
-                        <h4>Email</h4>
-                        <p><?php echo CONTACT_EMAIL; ?></p>
-                        <p>Réponse sous 24h</p>
-                    </div>
-                </div>
-
-                <div class="social-links">
-                    <h4>Suivez-nous</h4>
-                    <div class="social-icons">
-                        <a href="<?php echo SOCIAL_FACEBOOK; ?>" aria-label="Facebook">
-                            <i class="fab fa-facebook-f" aria-hidden="true"></i>
-                            <span class="sr-only">Facebook</span>
-                        </a>
-                        <a href="<?php echo SOCIAL_TWITTER; ?>" aria-label="Twitter">
-                            <i class="fab fa-twitter" aria-hidden="true"></i>
-                            <span class="sr-only">Twitter</span>
-                        </a>
-                        <a href="<?php echo SOCIAL_LINKEDIN; ?>" aria-label="LinkedIn">
-                            <i class="fab fa-linkedin-in" aria-hidden="true"></i>
-                            <span class="sr-only">LinkedIn</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
+            
             <div class="contact-form">
                 <div id="successMessage" class="success-message">
                     Votre message a été envoyé avec succès ! Nous vous répondrons dans les plus brefs délais.

@@ -1,0 +1,270 @@
+/* Media queries pour le responsive */
+
+@media (min-width: 768px) {
+  .header-content {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    margin-bottom: 0;
+  }
+
+  .footer-container {
+    flex-direction: row;
+  }
+
+  .contact-card {
+    flex-direction: row;
+  }
+
+  .logo-img {
+    max-width: 100px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .logo-img {
+    max-width: 120px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .hero-image h2 {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-image {
+    height: 100vh;
+  }
+
+  .hero-image h1 {
+    font-size: 1.8rem;
+    padding: 0 10px;
+  }
+
+  .hero-image p {
+    font-size: 1rem;
+    padding: 0 15px;
+  }
+
+  .hero-btn {
+    padding: 12px 24px;
+    font-size: 0.9rem;
+    width: auto;
+    max-width: none;
+  }
+
+  .partner-logos {
+    gap: 20px;
+  }
+
+  .partner-logos img {
+    height: 40px;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .cta-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .contact-info,
+  .contact-form {
+    padding: 25px;
+  }
+
+  .timeline-item {
+    width: 100%;
+    left: 0 !important;
+    padding-left: 60px;
+    padding-right: 20px;
+  }
+
+  .timeline::after {
+    left: 30px;
+  }
+
+  .timeline-item::after {
+    left: 18px !important;
+    right: auto !important;
+  }
+
+  .engagement-item,
+  .engagement-item.reverse {
+    flex-direction: column;
+  }
+
+  .engagement-content {
+    width: 100%;
+    order: 2;
+    padding: 20px;
+  }
+
+  .engagement-image {
+    width: 100%;
+    min-height: 180px;
+    order: 1;
+  }
+
+  .engagement-image img {
+    max-height: 150px;
+  }
+
+  .form-row {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .checkbox-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form-progress {
+    flex-wrap: wrap;
+  }
+
+  .progress-step {
+    width: 50%;
+    margin-bottom: 15px;
+  }
+
+  .progress-step:nth-child(3),
+  .progress-step:nth-child(4) {
+    margin-bottom: 0;
+  }
+
+  .form-progress::before {
+    display: none;
+  }
+
+  .icon-circle {
+    width: 70px;
+    height: 70px;
+  }
+
+  .testimonial-card {
+    padding: 25px 20px;
+  }
+
+  .touch-active {
+    opacity: 0.7;
+    transform: scale(0.98);
+  }
+}
+
+@media (max-width: 640px) {
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-image {
+    height: 100vh;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero-btn {
+    width: 80%;
+    max-width: 300px;
+  }
+
+  .stat-item h3 {
+    font-size: 2rem;
+  }
+
+  .stat-item p {
+    font-size: 0.9rem;
+  }
+
+  .service-card {
+    padding: 20px;
+  }
+
+  .service-card h3 {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-image h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero-image p {
+    font-size: 0.9rem;
+  }
+
+  .hero-btn {
+    padding: 10px 20px;
+    font-size: 0.85rem;
+  }
+
+  .cta-section h2 {
+    font-size: 1.3rem;
+  }
+
+  .stat-item h3 {
+    font-size: 1.8rem;
+  }
+
+  .contact-icon {
+    width: 36px;
+    height: 36px;
+  }
+
+  .contact-details h4 {
+    font-size: 14px;
+  }
+
+  .contact-details p {
+    font-size: 12px;
+  }
+
+  .faq-container {
+    padding: 20px 15px;
+  }
+
+  .faq-container h3 {
+    font-size: 18px;
+  }
+
+  .partner-logos img {
+    height: 30px;
+    max-width: 60px;
+  }
+
+  .icon-circle {
+    width: 60px;
+    height: 60px;
+  }
+
+  .engagement-image {
+    height: 120px;
+  }
+
+  .engagement-image img {
+    max-height: 120px;
+  }
+}
+
+@supports (-webkit-touch-callout: none) {
+  .hero-image {
+    height: -webkit-fill-available;
+  }
+}

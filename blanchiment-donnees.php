@@ -140,16 +140,17 @@ $pageTitle = "Blanchiment de Données - " . SITE_NAME;
         </div>
     </section>
 
-    <section class="cta py-20">
-        <div class="container mx-auto px-4 text-center">
-            <h2 class="text-3xl font-bold mb-6">Besoin d'effacer des données sensibles ?</h2>
-            <p class="text-xl mb-8 max-w-3xl mx-auto">
-                Faites appel à une solution conforme, éprouvée, et pilotée par des experts en sécurité informatique. 
-                Le blanchiment de données est la dernière étape avant la vente, le don, ou la destruction responsable de vos équipements.
-            </p>
-            <a href="/contact.php" class="btn-primary px-8 py-3 rounded-full">Demander un devis</a>
+    <section class="solutions-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Équipez votre établissement</h2>
+                <p>Découvrez nos solutions sur mesure pour l'éducation</p>
+                <div class="cta-buttons">
+                    <a href="/contact.php" class="btn btn-primary">Demander un devis</a>
+                    <a href="/telecharger-plaquette.php" class="btn btn-secondary">Documentation détaillée</a>
+                </div>
+            </div>
         </div>
     </section>
-</main>
 
 <?php include 'includes/footer.php'; ?>
