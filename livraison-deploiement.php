@@ -69,10 +69,10 @@ $pageTitle = "Livraison et Déploiement - " . SITE_NAME;
     <?php
     $steps = [
         ['title' => 'Panier', 'text' => 'Ajoutez vos produits au panier', 'icon' => 'fa-shopping-cart', 'status' => 'completed', 'color' => 'bg-blue-500'],
-        ['title' => 'Identification', 'text' => 'Connectez-vous ou continuez en tant qu’invité', 'icon' => 'fa-user', 'status' => 'completed', 'color' => 'bg-purple-500'],
-        ['title' => 'Livraison', 'text' => 'Choisissez votre mode de livraison', 'icon' => 'fa-truck', 'status' => 'active', 'color' => 'bg-pink-500'],
-        ['title' => 'Paiement', 'text' => 'Saisissez vos informations de paiement', 'icon' => 'fa-credit-card', 'status' => '', 'color' => 'bg-gray-300'],
-        ['title' => 'Confirmation', 'text' => 'Recevez la confirmation de votre commande', 'icon' => 'fa-check-circle', 'status' => '', 'color' => 'bg-gray-300'],
+        ['title' => 'Identification', 'text' => 'Connectez-vous ou continuez en tant qu’invité', 'icon' => 'fa-user', 'status' => 'completed', 'color' => 'bg-blue-500'],
+        ['title' => 'Livraison', 'text' => 'Choisissez votre mode de livraison', 'icon' => 'fa-truck', 'status' => 'active', 'color' => 'bg-blue-500'],
+        ['title' => 'Paiement', 'text' => 'Saisissez vos informations de paiement', 'icon' => 'fa-credit-card', 'status' => '', 'color' => 'bg-blue-500'],
+        ['title' => 'Confirmation', 'text' => 'Recevez la confirmation de votre commande', 'icon' => 'fa-check-circle', 'status' => '', 'color' => 'bg-blue-500'],
     ];
 
     renderHorizontalTimeline($steps);
